@@ -9,13 +9,13 @@ http://www.miui.com/thread-1960799-1-1.html
 
 三、交互图
 对于交互图，应用层会响应点击放大操作，提供额外的交互体验，具体扩展如下所示：
-'''html
+```html
 <div class="duokan-image-single">
     <img src="../Images/tree.png"alt="" />
     <p class="duokan-image-maintitle">主标题：大自然</p>
     <p class="duokan-image-subtitle">副标题：森林中的树</p>
 </div>
-'''
+```
 
 为了保证点击放大之后的图像呈现效果，采用交互模式的图像数据应该保证足够的分辨率。
 注意：
