@@ -31,7 +31,7 @@ def run(bk):
             print("You may fix content.opf file from you Epub: remove or rename record for:\n%s" % href)
             continue
         #html = text_type(html, 'utf-8')
-        imgs = re.findall(r'(<img.+?src=\"(.[^ ]*)\" .*/>)', html, re.I + re.M)
+        imgs = re.findall(r'(<img.*src=\"(\S+)\".*/>)', html)
         if(len(imgs)>0):
             for img,fi in imgs:
                 print('-------')
